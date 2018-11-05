@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="login"
         android:ems="10"
+
         android:inputType="textPersonName" />
 
     <TextView
@@ -37,6 +38,7 @@
         android:id="@+id/valid_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_valid"
         android:text="Valider" />
 
     <Button
