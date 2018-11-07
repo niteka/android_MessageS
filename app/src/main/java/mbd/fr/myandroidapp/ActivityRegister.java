@@ -41,14 +41,11 @@
                     String lastName = etLastName.getText().toString();
                     String userName = etUserName.getText().toString();
                     String passWord = etPassword.getText().toString();
-                    //Database dbHandler = Database.getInstance(ActivityRegister.this);  // context ????
                     mDb=Database.getInstance(ActivityRegister.this);
                     mDb.addPerson(name,lastName, userName, passWord);
                     //Intent intent = new Intent(ActivityRegister.this,DetailsActivity.class);
                     //startActivity(intent);
                     Toast.makeText(getApplicationContext(), "Details Inserted Successfully",Toast.LENGTH_SHORT).show();
-
-
 
                 }
             });
