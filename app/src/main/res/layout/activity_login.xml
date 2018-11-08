@@ -4,33 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
     android:background="@color/colorBackgroundLogin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     >
 
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
 
     <EditText
         android:id="@+id/login_box"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_margin="8dp"
+
+        android:background="@drawable/rounded_editext_register_login"
         android:contentDescription="login"
 
         android:ems="10"
         android:hint="UserName"
-
-        android:paddingLeft="16dp"
         android:inputType="textPersonName"
-        android:layout_margin="8dp"
-        android:background="@drawable/rounded_editext_register_login"
-        />
+        android:paddingLeft="16dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -42,13 +35,13 @@
         android:id="@+id/password_box"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="PassWord"
-
-        android:paddingLeft="16dp"
         android:layout_margin="8dp"
         android:background="@drawable/rounded_editext_register_login"
+        android:ems="10"
+
+        android:hint="PassWord"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
 
         />
 
@@ -58,15 +51,17 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_button_valid"
         android:text="Valider"
-        android:textColor="@android:color/white"
-        />
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
         android:text="Or Register Here"
         android:textColor="@android:color/holo_green_dark"
+        android:layout_gravity="center_horizontal"
+
         />
 
 </LinearLayout>
