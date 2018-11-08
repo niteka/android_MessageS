@@ -7,6 +7,7 @@
     import android.view.View;
     import android.widget.Button;
     import android.widget.EditText;
+    import android.widget.TextView;
     import android.widget.Toast;
 
     public class ActivityRegister extends AppCompatActivity {
@@ -16,6 +17,7 @@
         EditText etUserName;
         EditText etPassword;
         Button  bRegister;
+        TextView textValreadyHaveAccount;
 
         Database mDb;
 
@@ -31,6 +33,7 @@
             etUserName= (EditText) findViewById(R.id.login_box);
             etPassword= (EditText) findViewById(R.id.password_box);
             bRegister= (Button) findViewById(R.id.register_btn);
+            textValreadyHaveAccount=(TextView) findViewById(R.id.alReadyHaveAccount_text_view);
 
 // Database ...
 
@@ -43,11 +46,26 @@
                     String userName = etUserName.getText().toString();
                     String passWord = etPassword.getText().toString();
                     mDb=Database.getInstance(ActivityRegister.this);
-                    mDb.addPerson(name,lastName, userName, passWord);
-                    //Intent intent = new Intent(ActivityRegister.this,DetailsActivity.class);
-                    //startActivity(intent);
-                    Toast.makeText(getApplicationContext(), "Details Inserted Successfully",Toast.LENGTH_SHORT).show();
+                    if (name.length()==0 || lastName.length()==0 || userName.length()==0 || passWord.length()==0) {
+                        Toast.makeText(ActivityRegister.this, "Please enter text !", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    else {
+                        mDb.addPerson(name, lastName, userName, passWord);
 
+
+                        //Intent intent = new Intent(ActivityRegister.this,DetailsActivity.class);
+                        //startActivity(intent);
+                        Toast.makeText(getApplicationContext(), "Details Inserted Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+
+            textValreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent loginIntent = new Intent(ActivityRegister.this, ActivityLogin.class);
+                    ActivityRegister.this.startActivity(loginIntent);
                 }
             });
 

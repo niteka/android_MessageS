@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ActivityLogin extends AppCompatActivity
 {
@@ -26,7 +27,9 @@ public class ActivityLogin extends AppCompatActivity
         validBtn = (Button) findViewById(R.id.valid_btn);
         registreLink = findViewById(R.id.register_btn);
 
+
         validBtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 login();
@@ -43,6 +46,11 @@ public class ActivityLogin extends AppCompatActivity
     }
 
     public void login() {
+        if (loginBox.getText().length()==0 || passBox.getText().length()==0) {
+            Toast.makeText(this,"Please enter text in login/Pwd", Toast.LENGTH_SHORT).show();
+            return;
+
+        }
         if (loginBox.getText().equals("toto")
                 && passBox.getText().equals("tata")) {
             validBtn.setBackgroundColor(Color.GREEN);
