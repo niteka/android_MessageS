@@ -14,40 +14,59 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+
+        />
 
     <EditText
         android:id="@+id/login_box"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:contentDescription="login"
-        android:ems="10"
 
-        android:inputType="textPersonName" />
+        android:ems="10"
+        android:hint="UserName"
+
+        android:paddingLeft="16dp"
+        android:inputType="textPersonName"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_editext_register_login"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password" />
+
+        />
 
     <EditText
         android:id="@+id/password_box"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:hint="PassWord"
+
+        android:paddingLeft="16dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_editext_register_login"
+
+        />
 
     <Button
         android:id="@+id/valid_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_button_valid"
-        android:text="Valider" />
+        android:text="Valider"
+        android:textColor="@android:color/white"
+        />
 
     <Button
         android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Or Register Here" />
+        android:text="Or Register Here"
+        android:textColor="@android:color/holo_green_dark"
+        />
 
 </LinearLayout>

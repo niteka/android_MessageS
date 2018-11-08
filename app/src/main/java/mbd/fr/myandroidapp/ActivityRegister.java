@@ -31,6 +31,7 @@
             etUserName= (EditText) findViewById(R.id.login_box);
             etPassword= (EditText) findViewById(R.id.password_box);
             bRegister= (Button) findViewById(R.id.register_btn);
+
 // Database ...
 
 

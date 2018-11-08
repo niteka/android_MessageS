@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyAndroidApp</string>
+    <string name="app_name">Message</string>
     <string name="login_txt">Login</string>
     <string name="pass_txt">Password</string>
     <string name="title_activity_login">Sign in</string>
