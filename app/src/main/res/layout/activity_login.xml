@@ -51,7 +51,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_button_valid"
         android:text="Valider"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:layout_margin="8dp"
+        />
 
     <!--<Button
         android:id="@+id/register_btn"
