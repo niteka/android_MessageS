@@ -16,7 +16,7 @@ public class ActivityLogin extends AppCompatActivity
     EditText loginBox;
     EditText passBox;
     Button validBtn;
-    TextView registreLink;
+    TextView registerLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class ActivityLogin extends AppCompatActivity
         loginBox = (EditText)findViewById(R.id.login_box);
         passBox = (EditText)findViewById(R.id.password_box);
         validBtn = (Button) findViewById(R.id.valid_btn);
-        registreLink = findViewById(R.id.register_btn);
+        registerLink = findViewById(R.id.register_btn);
 
 
         validBtn.setOnClickListener(new View.OnClickListener() {
@@ -37,11 +37,11 @@ public class ActivityLogin extends AppCompatActivity
             }
         });
 
-        registreLink.setOnClickListener(new View.OnClickListener() {
+        registerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registreIntent = new Intent(ActivityLogin.this, ActivityRegister.class);
-                ActivityLogin.this.startActivity(registreIntent);
+                Intent registerIntent = new Intent(ActivityLogin.this, ActivityRegister.class);
+                ActivityLogin.this.startActivity(registerIntent);
             }
         });
     }

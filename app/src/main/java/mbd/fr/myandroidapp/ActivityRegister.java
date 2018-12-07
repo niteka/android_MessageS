@@ -69,6 +69,11 @@
                 }
             });
 
+          /*  selectphoto_button_register.setOnclickListener{
+                log.d(tag:"ActivictyRegister", msg: "Try to show photo selector")
+                Intent intent= Intent(Intent.ACTION_PICK);
+            }
+*/
 
         }
     }
