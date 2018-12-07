@@ -53,15 +53,42 @@
         android:text="Valider"
         android:textColor="@android:color/white" />
 
-    <Button
+    <!--<Button
         android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
         android:text="Or Register Here"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="@color/colorBackgroundButton"
         android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
 
+
+        />-->
+
+    <TextView
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="20dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="@android:dimen/app_icon_size"
+        android:text="Or Register Here"
+        android:textColor="@android:color/white"
+        android:gravity="bottom"
+
+        android:textStyle="bold"
         />
+
+
+
 
 </LinearLayout>

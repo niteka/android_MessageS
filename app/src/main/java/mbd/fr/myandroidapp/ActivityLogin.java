@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ActivityLogin extends AppCompatActivity
@@ -15,7 +16,7 @@ public class ActivityLogin extends AppCompatActivity
     EditText loginBox;
     EditText passBox;
     Button validBtn;
-    Button registreLink;
+    TextView registreLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
