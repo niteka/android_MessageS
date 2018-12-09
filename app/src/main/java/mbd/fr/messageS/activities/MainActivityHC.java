@@ -1,6 +1,8 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS.activities;
 
 import android.app.Activity;
+
+import mbd.fr.messageS.MainFragmentCallBack;
 
 public class MainActivityHC extends Activity implements MainFragmentCallBack {
     @Override

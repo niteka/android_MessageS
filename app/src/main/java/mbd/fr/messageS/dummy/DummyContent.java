@@ -1,4 +1,4 @@
-package mbd.fr.myandroidapp.dummy;
+package mbd.fr.messageS.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

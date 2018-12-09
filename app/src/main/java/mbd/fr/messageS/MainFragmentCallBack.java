@@ -1,4 +1,4 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS;
 
 public interface MainFragmentCallBack {
     /**

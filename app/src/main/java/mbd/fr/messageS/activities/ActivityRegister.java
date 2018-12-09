@@ -1,4 +1,4 @@
-    package mbd.fr.myandroidapp;
+    package mbd.fr.messageS.activities;
 
     import android.content.Intent;
     import android.os.Bundle;
@@ -9,6 +9,9 @@
     import android.widget.EditText;
     import android.widget.TextView;
     import android.widget.Toast;
+
+    import mbd.fr.messageS.Database;
+    import mbd.fr.messageS.R;
 
     public class ActivityRegister extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import mbd.fr.myandroidapp.ItemFragment.OnListFragmentInteractionListener;
-import mbd.fr.myandroidapp.dummy.DummyContent.DummyItem;
+import mbd.fr.messageS.fragments.ItemFragment.OnListFragmentInteractionListener;
+import mbd.fr.messageS.dummy.DummyContent.DummyItem;
 
 import java.util.List;
 

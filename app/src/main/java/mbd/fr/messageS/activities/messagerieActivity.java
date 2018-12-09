@@ -1,7 +1,9 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import mbd.fr.messageS.R;
 
 //Messagerie(conversation avec une personne, champ texte et bouton pour envoyer)
 

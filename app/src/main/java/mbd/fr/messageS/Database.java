@@ -1,4 +1,4 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -53,4 +53,29 @@ public class  Database {
 // Insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(ContactContract.FeedContact.TABLE_NAME, null, values);
     }
+
+ /*   public int removeContactWithLogin(String login){
+        SQLiteDatabase db = helper.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(ContactContract.FeedContact.COLUMN_NAME_LOGIN, login);
+
+
+// Insert the new row, returning the primary key value of the new row
+        //long newRowId = db.delete(ContactContract.FeedContact.TABLE_NAME, null, values);
+    }*/
+
+
+   /* public boolean deleteContact(String login)
+    {
+        return db.delete(DATABASE_TABLE, ContactContract.FeedContact.COLUMN_NAME_LOGIN + "=" + login, null) > 0;
+    }*/
+
+
+
+  /*  int delete(String table, String whereClause, String[] whereArgs)
+    Méthode pratique pour supprimer des lignes dans la base de données.
+    */
+
 }

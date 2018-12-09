@@ -1,7 +1,10 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import mbd.fr.messageS.R;
+
 //AjouterContact(username,...) evoie un message de type PING à l’utilisateur
 public class AjouterContatctActivity extends AppCompatActivity {
     //liste de message

@@ -1,4 +1,4 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS.activities;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import mbd.fr.messageS.R;
 
 public class ActivityLogin extends AppCompatActivity
 {

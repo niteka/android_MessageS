@@ -1,4 +1,4 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,10 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import mbd.fr.myandroidapp.dummy.DummyContent;
-import mbd.fr.myandroidapp.dummy.DummyContent.DummyItem;
-
-import java.util.List;
+import mbd.fr.messageS.MyItemRecyclerViewAdapter;
+import mbd.fr.messageS.R;
+import mbd.fr.messageS.dummy.DummyContent;
+import mbd.fr.messageS.dummy.DummyContent.DummyItem;
 
 /**
  * A fragment representing a list of Items.
