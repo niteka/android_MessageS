@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-public class Database {
+public class  Database {
     private static Database INSTANCE;
     private SQLiteOpenHelper helper;
 
