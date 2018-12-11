@@ -10,7 +10,7 @@
     import android.widget.TextView;
     import android.widget.Toast;
 
-    import mbd.fr.messageS.Database;
+    import mbd.fr.messageS.DB.Database;
     import mbd.fr.messageS.R;
 
     public class ActivityRegister extends AppCompatActivity {

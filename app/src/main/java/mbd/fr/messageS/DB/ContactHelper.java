@@ -1,4 +1,4 @@
-package mbd.fr.messageS;
+package mbd.fr.messageS.DB;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -20,10 +20,12 @@ public class ContactHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "ContactDb.db";
 
     public ContactHelper(Context context) {
+
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     public void onCreate(SQLiteDatabase db) {
+
         db.execSQL(SQL_CREATE_ENTRIES);
     }
 

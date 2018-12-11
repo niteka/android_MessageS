@@ -16,17 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="mbd.fr.androidApp.messageS.ActivityLogin">
+        <activity android:name="mbd.fr.messageS.activities.ActivityLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="mbd.fr.androidApp.messageS.ActivityRegister" />
-        <activity android:name="mbd.fr.androidApp.messageS.contactListActivity" />
-        <activity android:name="mbd.fr.androidApp.messageS.messagerieActivity" />
-        <activity android:name="mbd.fr.androidApp.messageS.AjouterContatctActivity"></activity>
+        <activity android:name="mbd.fr.messageS.activities.ActivityRegister" />
+        <activity android:name="mbd.fr.messageS.activities.contactListActivity" />
+        <activity android:name="mbd.fr.messageS.activities.messagerieActivity" />
+        <activity android:name="mbd.fr.messageS.activities.AjouterContatctActivity" />
+        <activity android:name="mbd.fr.messageS.activities.activity_listemessagerie"></activity>
     </application>
 
 </manifest>

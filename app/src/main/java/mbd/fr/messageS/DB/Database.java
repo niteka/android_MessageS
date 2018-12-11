@@ -1,4 +1,4 @@
-package mbd.fr.messageS;
+package mbd.fr.messageS.DB;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -25,7 +25,7 @@ public class  Database {
 
         return INSTANCE;
     }
-
+// DAO
     public final class ContactContract{
         private ContactContract() {}
         public class FeedContact implements BaseColumns

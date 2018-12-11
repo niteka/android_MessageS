@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 
-import mbd.fr.messageS.MainFragmentCallBack;
-
 public class MainFragmentHC extends Fragment {
     /**
      * La parent du fragment (son callback/sonactivité contenante)

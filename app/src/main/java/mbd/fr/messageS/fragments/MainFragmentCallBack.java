@@ -1,4 +1,4 @@
-package mbd.fr.messageS;
+package mbd.fr.messageS.fragments;
 
 public interface MainFragmentCallBack {
     /**
