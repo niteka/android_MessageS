@@ -1,7 +1,11 @@
 package mbd.fr.messageS.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import mbd.fr.messageS.R;
 
@@ -20,10 +24,28 @@ Alice[|]MSG[|]fkznjfknzbjfkznefz //salut ...
  */
 
 public class messagerieActivity extends AppCompatActivity {
-
+    Button button;
+    EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messagerie);
+
+        button= (Button)findViewById(R.id.send);
+        editText=(EditText)findViewById(R.id.user_message);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        /*Intent intent =getIntent();
+        String message = intent.getStringExtra()*/
+
+
     }
+
+
 }

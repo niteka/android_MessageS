@@ -27,7 +27,6 @@
         <activity android:name="mbd.fr.messageS.activities.contactListActivity" />
         <activity android:name="mbd.fr.messageS.activities.messagerieActivity" />
         <activity android:name="mbd.fr.messageS.activities.AjouterContatctActivity" />
-        <activity android:name="mbd.fr.messageS.activities.activity_listemessagerie"></activity>
     </application>
 
 </manifest>
