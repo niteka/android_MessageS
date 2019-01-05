@@ -1,13 +1,6 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v.widget.RecyclerView android:id="@+id/recycler_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="mbd.fr.messageS.fragments.MainFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+    android:layout_height="0dp"
+    android:layout_weight="7"
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

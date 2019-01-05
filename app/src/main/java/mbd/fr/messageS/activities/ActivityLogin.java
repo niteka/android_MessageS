@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import mbd.fr.messageS.DB.Database;
 import mbd.fr.messageS.R;
 
 public class ActivityLogin extends AppCompatActivity
@@ -19,6 +20,7 @@ public class ActivityLogin extends AppCompatActivity
     EditText passBox;
     Button validBtn;
     TextView registerLink;
+    Database mDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,16 +52,15 @@ public class ActivityLogin extends AppCompatActivity
 
     public void login() {
         if (loginBox.getText().length()==0 || passBox.getText().length()==0) {
+            validBtn.setBackgroundColor(Color.RED);
             Toast.makeText(this,"Please enter text in login/Pwd", Toast.LENGTH_SHORT).show();
             return;
 
         }
-        if (loginBox.getText().equals("toto")
-                && passBox.getText().equals("tata")) {
-            validBtn.setBackgroundColor(Color.GREEN);
-        } else {
-            validBtn.setBackgroundColor(Color.RED);
-        }
+        else{
+            Intent loginIntent = new Intent(ActivityLogin.this, fragment_main.class);
+            //ActivityLogin.this.startActivity(registerIntent);
+
     }
 
 
