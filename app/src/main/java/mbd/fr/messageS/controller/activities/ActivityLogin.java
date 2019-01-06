@@ -1,5 +1,6 @@
 package mbd.fr.messageS.controller.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -51,15 +52,14 @@ public class ActivityLogin extends AppCompatActivity {
 
     public void login() {
         if (loginBox.getText().length() == 0 || passBox.getText().length() == 0) {
-            validBtn.setBackgroundColor(Color.RED);
-            Toast.makeText(this, "All filds are required", Toast.LENGTH_SHORT).show();
+            //validBtn.setBackgroundColor(Color.RED);
+            Toast.makeText(this, "All Fields are required", Toast.LENGTH_SHORT).show();
             return;
 
+
         } else {
-
-
-            Intent loginIntent = new Intent(ActivityLogin.this, ContactListActivity.class);
-            ActivityLogin.this.startActivity(loginIntent);
+            Intent contactLisIntent = new Intent(ActivityLogin.this, ContactListActivity.class);
+            ActivityLogin.this.startActivity(contactLisIntent);
 
 
 
