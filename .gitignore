@@ -13,3 +13,4 @@
 /.idea/kotlinc.xml
 
 /.idea/*
+.idea/dbnavigator.xml
