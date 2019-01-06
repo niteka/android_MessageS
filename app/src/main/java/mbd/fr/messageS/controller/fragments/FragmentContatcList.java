@@ -11,10 +11,9 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
-
 import mbd.fr.messageS.R;
 import mbd.fr.messageS.controller.adapter.TextAdapter;
 
@@ -33,15 +32,11 @@ public class FragmentContatcList extends Fragment {
     private static final String ARG_PARAM2 = "param2";
     private iCallable mCallback;
     private RecyclerView recyclerView;
+    Button bRegister;
 
     private RecyclerView.Adapter mAdapter;
 
-    private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
-
-
-
-
     public interface iCallable {
         public void transfertData(String s);
     }
@@ -118,11 +113,6 @@ public class FragmentContatcList extends Fragment {
     }
 
                 // TODO: Rename method, update argument and hook method into UI event
-   /* public void onButtonPressed(Uri uri) {
-        if (mCallback != null) {
-            mCallback.transfertData(uri);
-        }
-    }*/
 
         @Override
         public void onAttach (Context context){
@@ -140,17 +130,4 @@ public class FragmentContatcList extends Fragment {
             super.onDetach();
             mCallback = null;
         }
-
-        /**
-         * This interface must be implemented by activities that contain this
-         * fragment to allow an interaction in this fragment to be communicated
-         * to the activity and potentially other fragments contained in that
-         * activity.
-         * <p>
-         * See the Android Training lesson <a href=
-         * "http://developer.android.com/training/basics/fragments/communicating.html"
-         * >Communicating with Other Fragments</a> for more information.
-         */
-
-
     }
