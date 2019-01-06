@@ -1,8 +1,5 @@
 package mbd.fr.messageS.controller.activities;
-
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,7 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import mbd.fr.messageS.model.Database;
 import mbd.fr.messageS.R;
 
@@ -21,7 +17,6 @@ public class ActivityLogin extends AppCompatActivity {
     Button validBtn;
     TextView registerLink;
     Database mDb;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,14 +53,9 @@ public class ActivityLogin extends AppCompatActivity {
 
 
         } else {
-            Intent contactLisIntent = new Intent(ActivityLogin.this, ContactListActivity.class);
-            ActivityLogin.this.startActivity(contactLisIntent);
-
-
-
+            Intent intent = new Intent(ActivityLogin.this, ContactListActivity.class);
+            ActivityLogin.this.startActivity(intent);
         }
     }
-
-
 }
 

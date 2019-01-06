@@ -9,8 +9,6 @@
     android:orientation="vertical"
     >
 
-
-
     <EditText
         android:id="@+id/login_box"
         android:layout_width="match_parent"
@@ -54,20 +52,6 @@
         android:textColor="@android:color/white"
         android:layout_margin="8dp"
         />
-
-    <!--<Button
-        android:id="@+id/register_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
-        android:text="Or Register Here"
-        android:textColor="@color/colorBackgroundButton"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-
-
-        />-->
-
     <TextView
         android:id="@+id/register_btn"
         android:layout_width="wrap_content"
@@ -89,8 +73,5 @@
 
         android:textStyle="bold"
         />
-
-
-
 
 </LinearLayout>

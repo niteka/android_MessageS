@@ -21,10 +21,7 @@
         EditText etPassword;
         Button  bRegister;
         TextView textValreadyHaveAccount;
-
         Database mDb;
-
-
 
         @Override
         protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,10 +52,6 @@
                     }
                     else {
                         mDb.addPerson(name, lastName, userName, passWord);
-
-
-                        //Intent intent = new Intent(ActivityRegister.this,DetailsActivity.class);
-                        //startActivity(intent);
                         Toast.makeText(getApplicationContext(), "Details Inserted Successfully", Toast.LENGTH_SHORT).show();
                         Intent loginIntent = new Intent(ActivityRegister.this, ActivityLogin.class);
                         ActivityRegister.this.startActivity(loginIntent);
@@ -73,9 +66,5 @@
                     ActivityRegister.this.startActivity(loginIntent);
                 }
             });
-
-
         }
-
-
     }
