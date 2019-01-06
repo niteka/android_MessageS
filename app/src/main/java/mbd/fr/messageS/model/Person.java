@@ -1,10 +1,14 @@
 package mbd.fr.messageS.model;
 
+import java.util.List;
+
 class Person {
     private String name;
     private String lastName;
     private String userName;
     private String password;
+
+    private List<String> contact;
 
     public Person(String etName, String lastName, String userName, String password) {
         this.name = etName;
@@ -45,4 +49,10 @@ class Person {
         this.password = password;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "userName='" + userName + '\'' +
+                '}';
+    }
 }

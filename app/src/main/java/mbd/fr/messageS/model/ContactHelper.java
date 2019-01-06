@@ -3,8 +3,12 @@ package mbd.fr.messageS.model;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+import java.io.ObjectOutput;
 
 public class ContactHelper extends SQLiteOpenHelper {
+
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + Database.ContactContract.FeedContact.TABLE_NAME + " (" +
                     Database.ContactContract.FeedContact._ID + " INTEGER PRIMARY KEY," +
@@ -29,6 +33,7 @@ public class ContactHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL(SQL_CREATE_ENTRIES);
+        Log.i("ContactHelper","onCreate invoked");
     }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

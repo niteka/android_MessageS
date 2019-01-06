@@ -6,10 +6,13 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Define a schema and contract
 public class  Database {
     private static Database INSTANCE;
     private SQLiteOpenHelper mDbHelper;
@@ -56,7 +59,8 @@ public class  Database {
 
 // Insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(ContactContract.FeedContact.TABLE_NAME, null, values);
-       // Log.i(name" ADDED IN DATABASE");
+        Log.i("Database","AddPerson invoked, "+name+" created");
+
     }
 
     public List<Person> readPerson()

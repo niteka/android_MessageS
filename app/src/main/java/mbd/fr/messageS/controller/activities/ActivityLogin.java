@@ -60,6 +60,8 @@ public class ActivityLogin extends AppCompatActivity {
             Intent loginIntent = new Intent(ActivityLogin.this, ContactListActivity.class);
             //ActivityLogin.this.startActivity(registerIntent);
 
+            //intent.putExtra("cle", valeur);
+
         }
     }
 

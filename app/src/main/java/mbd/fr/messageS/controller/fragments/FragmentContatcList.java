@@ -40,6 +40,8 @@ public class FragmentContatcList extends Fragment {
     private RecyclerView.LayoutManager mLayoutManager;
 
 
+
+
     public interface iCallable {
         public void transfertData(String s);
     }

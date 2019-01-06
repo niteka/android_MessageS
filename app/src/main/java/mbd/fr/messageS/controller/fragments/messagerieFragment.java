@@ -31,7 +31,7 @@ public class messagerieFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-    private ContactListActivity.iCallable mCallBcak;
+    private FragmentContatcList.iCallable mCallBcak;
 
     private String text;
 
