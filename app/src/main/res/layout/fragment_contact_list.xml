@@ -10,15 +10,6 @@
     android:orientation="vertical"
     tools:context="mbd.fr.messageS.controller.fragments.FragmentContatcList">
 
-    <!--
-<android.support.v7.widget.RecyclerView
-    android:id="@+id/recycler_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clipToPadding="false"
-    android:scrollbars="vertical"/>
--->
-
     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
@@ -27,9 +18,9 @@
         android:scrollbars="vertical" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btnAddUser"
-        android:layout_width="60dp"
-        android:layout_height="match_parent"
+        android:id="@+id/AddUser_Btn"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
@@ -42,15 +33,18 @@
         app:backgroundTint="@color/colorBackgroundButton"
 
         app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:src="@android:drawable/ic_input_add"
         tools:srcCompat="@android:drawable/ic_menu_add" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search_Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        app:srcCompat="@android:drawable/ic_search_category_default" />
+        android:clickable="true"
+        android:src="@android:drawable/ic_search_category_default"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_disabled" />
 
 </RelativeLayout>
 

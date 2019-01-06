@@ -50,7 +50,7 @@
                     String passWord = etPassword.getText().toString();
                     mDb=Database.getInstance(ActivityRegister.this);
                     if (name.length()==0 || lastName.length()==0 || userName.length()==0 || passWord.length()==0) {
-                        Toast.makeText(ActivityRegister.this, "Please enter text !", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ActivityRegister.this, "All Fields are required!", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     else {
@@ -60,6 +60,8 @@
                         //Intent intent = new Intent(ActivityRegister.this,DetailsActivity.class);
                         //startActivity(intent);
                         Toast.makeText(getApplicationContext(), "Details Inserted Successfully", Toast.LENGTH_SHORT).show();
+                        Intent loginIntent = new Intent(ActivityRegister.this, ActivityLogin.class);
+                        ActivityRegister.this.startActivity(loginIntent);
                     }
                 }
             });
@@ -72,11 +74,8 @@
                 }
             });
 
-          /*  selectphoto_button_register.setOnclickListener{
-                log.d(tag:"ActivictyRegister", msg: "Try to show photo selector")
-                Intent intent= Intent(Intent.ACTION_PICK);
-            }
-*/
 
         }
+
+
     }

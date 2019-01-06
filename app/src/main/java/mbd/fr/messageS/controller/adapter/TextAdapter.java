@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.List;
 import mbd.fr.messageS.R;
-import mbd.fr.messageS.dummy.DummyContent;
+
 
 
 public class TextAdapter extends RecyclerView.Adapter<TextAdapter.MyViewHolder> {
@@ -32,12 +32,15 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.MyViewHolder> 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-     /*       public final View mView;
-            public final TextView mIdView;
-            public final TextView mContentView;
-            public DummyContent.DummyItem mItem;
+             /*       public final View mView;
+                    public final TextView mIdView;
+                    public final TextView mContentView;
+                    public DummyContent.DummyItem mItem;
 
-
+            super(view);
+            mView = view;
+            mIdView = (TextView) view.findViewById(R.id.cellulite);
+            mContentView = (TextView) view.findViewById(R.id.content);
 
 
             */
