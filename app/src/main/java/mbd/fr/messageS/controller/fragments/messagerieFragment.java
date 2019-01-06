@@ -1,4 +1,4 @@
-package mbd.fr.messageS.fragments;
+package mbd.fr.messageS.controller.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import mbd.fr.messageS.R;
-import mbd.fr.messageS.activities.ContactListActivity;
+import mbd.fr.messageS.controller.activities.ContactListActivity;
 
 
 /**

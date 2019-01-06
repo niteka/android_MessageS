@@ -1,4 +1,4 @@
-package mbd.fr.messageS.fragments;
+package mbd.fr.messageS.controller.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import mbd.fr.messageS.MyItemRecyclerViewAdapter;
+import mbd.fr.messageS.model.MyItemRecyclerViewAdapter;
 import mbd.fr.messageS.R;
 import mbd.fr.messageS.dummy.DummyContent;
 import mbd.fr.messageS.dummy.DummyContent.DummyItem;
@@ -58,7 +58,7 @@ public class ItemFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_item_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_contact_list, container, false);
 
         // Set the adapter
         if (view instanceof RecyclerView) {

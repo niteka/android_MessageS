@@ -20,16 +20,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.ActivityLogin">
+        <activity android:name=".controller.activities.ActivityLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ActivityRegister" />
-        <activity android:name=".activities.contactListActivity" />
-        <activity android:name=".activities.AjouterContatctActivity" />
+        <activity android:name=".controller.activities.ActivityRegister" />
+        <activity android:name=".controller.activities.contactListActivity" />
+        <activity android:name=".controller.activities.AjouterContatctActivity" />
     </application>
 
 </manifest>

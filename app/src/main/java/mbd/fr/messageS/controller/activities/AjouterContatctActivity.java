@@ -1,4 +1,4 @@
-package mbd.fr.messageS.activities;
+package mbd.fr.messageS.controller.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

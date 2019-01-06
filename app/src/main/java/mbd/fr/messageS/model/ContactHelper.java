@@ -1,4 +1,4 @@
-package mbd.fr.messageS.DB;
+package mbd.fr.messageS.model;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -1,4 +1,4 @@
-package mbd.fr.messageS.adapters;
+package mbd.fr.messageS.controller.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -46,6 +46,8 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.MyViewHolder> 
         return strs.size();
     }
 }
+
+
 
 
 

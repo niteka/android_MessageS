@@ -1,4 +1,4 @@
-package mbd.fr.messageS.DB;
+package mbd.fr.messageS.model;
 
 class Person {
     private String name;
