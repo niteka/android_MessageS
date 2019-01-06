@@ -1,56 +1,41 @@
-package mbd.fr.myandroidapp;
+package mbd.fr.messageS.fragments;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
-
 import mbd.fr.messageS.R;
-import mbd.fr.messageS.adapters.TextAdapter;
+import mbd.fr.messageS.activities.ContactListActivity;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link itemrow.OnFragmentInteractionListener} interface
+ * {@link messagerieFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link itemrow#newInstance} factory method to
+ * Use the {@link messagerieFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class itemrow extends Fragment {
+public class messagerieFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-
-
-    List<String> strs = new ArrayList<String>();
-    strs.add("Nag");
-    strs.add("Franck");
-    strs.add("Bright");
-    strs.add("Erica");
-
-    TextAdapter mAdapter = new TextAdapter(strs);
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    private ContactListActivity.iCallable mCallBcak;
 
-    public itemrow() {
+    private String text;
+
+    public messagerieFragment() {
         // Required empty public constructor
     }
 
@@ -60,11 +45,11 @@ public class itemrow extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment itemrow.
+     * @return A new instance of fragment messagerieFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static itemrow newInstance(String param1, String param2) {
-        itemrow fragment = new itemrow();
+    public static messagerieFragment newInstance(String param1, String param2) {
+        messagerieFragment fragment = new messagerieFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -85,11 +70,7 @@ public class itemrow extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        return inflater.inflate(R.layout.fragment_itemrow, container, false);
+        return inflater.inflate(R.layout.fragment_messagerie, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -99,6 +80,14 @@ public class itemrow extends Fragment {
         }
     }
 
+
+
+
+
+
+    public void setText(String txt){
+        this.text=txt;
+    }
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);

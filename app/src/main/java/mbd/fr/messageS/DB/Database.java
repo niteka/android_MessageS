@@ -57,7 +57,7 @@ public class  Database {
 
 // Insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(ContactContract.FeedContact.TABLE_NAME, null, values);
-        Log.i(name" ADDED IN DATABASE");
+       // Log.i(name" ADDED IN DATABASE");
     }
 
     public List<Person> readPerson()

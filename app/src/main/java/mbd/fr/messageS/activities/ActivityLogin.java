@@ -13,8 +13,7 @@ import android.widget.Toast;
 import mbd.fr.messageS.DB.Database;
 import mbd.fr.messageS.R;
 
-public class ActivityLogin extends AppCompatActivity
-{
+public class ActivityLogin extends AppCompatActivity {
 
     EditText loginBox;
     EditText passBox;
@@ -27,8 +26,8 @@ public class ActivityLogin extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        loginBox = (EditText)findViewById(R.id.login_box);
-        passBox = (EditText)findViewById(R.id.password_box);
+        loginBox = (EditText) findViewById(R.id.login_box);
+        passBox = (EditText) findViewById(R.id.password_box);
         validBtn = (Button) findViewById(R.id.valid_btn);
         registerLink = findViewById(R.id.register_btn);
 
@@ -51,16 +50,16 @@ public class ActivityLogin extends AppCompatActivity
     }
 
     public void login() {
-        if (loginBox.getText().length()==0 || passBox.getText().length()==0) {
+        if (loginBox.getText().length() == 0 || passBox.getText().length() == 0) {
             validBtn.setBackgroundColor(Color.RED);
-            Toast.makeText(this,"Please enter text in login/Pwd", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter text in login/Pwd", Toast.LENGTH_SHORT).show();
             return;
 
-        }
-        else{
-            Intent loginIntent = new Intent(ActivityLogin.this, fragment_main.class);
+        } else {
+            Intent loginIntent = new Intent(ActivityLogin.this, contactListActivity.class);
             //ActivityLogin.this.startActivity(registerIntent);
 
+        }
     }
 
 

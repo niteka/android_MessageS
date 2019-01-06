@@ -5,12 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.List;
-
 import mbd.fr.messageS.R;
 
-import static android.support.v7.widget.RecyclerView.*;
 
 public class TextAdapter extends RecyclerView.Adapter<TextAdapter.MyViewHolder> {
     private List<String> strs;
@@ -36,26 +33,18 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.MyViewHolder> 
         }
         //C’est le lien entre la vue et les données
     }
-
-
-    //onBindViewHolder
+    //Fonction appelée a chaque fois que la recycle view lie une cellule a une nouvelle donnée,
+    // on doit mettre a jour les champs de la cellule avec les données pour la position passée
+    // en parametre
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.txtv.setText(strs.get(position));
     }
 
-
-    //Fonction appelée a chaque fois que la recycle view lie une cellule a une nouvelle donnée,
-    // on doit mettre a jour les champs de la cellule avec les données pour la position passée
-    // en parametre
-
-
-    //ItemCount
+    //ItemCount Permet a la recycleView de savoir combien de cellule afficher
     @Override
     public int getItemCount() {
         return strs.size();
     }
-
-
 }
 
 
