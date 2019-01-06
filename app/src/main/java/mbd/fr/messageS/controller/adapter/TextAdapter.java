@@ -1,4 +1,4 @@
-package mbd.fr.messageS.controller.adapters;
+package mbd.fr.messageS.controller.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.List;
 import mbd.fr.messageS.R;
+import mbd.fr.messageS.dummy.DummyContent;
 
 
 public class TextAdapter extends RecyclerView.Adapter<TextAdapter.MyViewHolder> {
@@ -24,14 +25,30 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.MyViewHolder> 
         return new MyViewHolder(itemView);
     }
 
+    //ien entre la vue et les données
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView txtv;
 
         public MyViewHolder(View itemView) {
             super(itemView);
+
+     /*       public final View mView;
+            public final TextView mIdView;
+            public final TextView mContentView;
+            public DummyContent.DummyItem mItem;
+
+
+
+
+            */
+
             txtv = (TextView) itemView.findViewById(R.id.cellulite);
         }
-        //C’est le lien entre la vue et les données
+
+
+
+
+
     }
     //Fonction appelée a chaque fois que la recycle view lie une cellule a une nouvelle donnée,
     // on doit mettre a jour les champs de la cellule avec les données pour la position passée

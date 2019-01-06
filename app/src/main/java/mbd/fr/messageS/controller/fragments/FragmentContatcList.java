@@ -1,13 +1,14 @@
 package mbd.fr.messageS.controller.fragments;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -15,8 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mbd.fr.messageS.R;
-import mbd.fr.messageS.controller.activities.ContactListActivity;
-import mbd.fr.messageS.controller.adapters.TextAdapter;
+import mbd.fr.messageS.controller.adapter.TextAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -35,6 +35,9 @@ public class FragmentContatcList extends Fragment {
     private RecyclerView recyclerView;
 
     private RecyclerView.Adapter mAdapter;
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.LayoutManager mLayoutManager;
 
 
     public interface iCallable {
@@ -71,7 +74,7 @@ public class FragmentContatcList extends Fragment {
         strs.add("nag");
         strs.add("joe");
         strs.add("john");
-        mAdapter =new TextAdapter(strs);
+        mAdapter = new TextAdapter(strs);
 
     }
 
@@ -87,12 +90,32 @@ public class FragmentContatcList extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        //Gérer le touch sur la recycle view
+        recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+            @Override
+            public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
+                View child = rv.findChildViewUnder(e.getX(), e.getY());
+                int pos = rv.getChildAdapterPosition(child);
+
+                return false;
+            }
+
+            @Override
+            public void onTouchEvent(@NonNull RecyclerView recyclerView, @NonNull MotionEvent motionEvent) {
+
+            }
+
+            @Override
+            public void onRequestDisallowInterceptTouchEvent(boolean b) {
+
+            }
+        });
+
+
         return inflater.inflate(R.layout.fragment_contact_list,container,false);
-        }
+    }
 
-
-
-        // TODO: Rename method, update argument and hook method into UI event
+                // TODO: Rename method, update argument and hook method into UI event
    /* public void onButtonPressed(Uri uri) {
         if (mCallback != null) {
             mCallback.transfertData(uri);
